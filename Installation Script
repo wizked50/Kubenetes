@@ -1,3 +1,5 @@
+#Installation for ubuntu user
+
 sudo hostnamectl set-hostname master
 sudo su ubuntu
 sudo -i
@@ -29,9 +31,7 @@ EOF
 sysctl --system
 
 
-#4) Install containerd run time
-
-#To install containerd, first install its dependencies.
+#4) Install containerd run time, first install its dependencies.
 
 apt-get update -y
 apt-get install ca-certificates curl gnupg lsb-release -y
@@ -80,7 +80,6 @@ apt-get install -y apt-transport-https ca-certificates curl
 # Download the Google Cloud public signing key:
 
 curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-
 
 # Add the Kubernetes apt repository:
 
